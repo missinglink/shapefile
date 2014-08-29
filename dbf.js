@@ -6,7 +6,7 @@ exports.reader = reader;
 
 function reader(filename, encoding) {
   var fileReader = file.reader(filename),
-      decode = utf8.test(encoding) ? decodeUtf8 : decoder(encoding || "ISO-8859-1"),
+      decode = utf8.test(encoding) ? decodeUtf8 : decoder(encoding || "UTF-8"),
       fieldDescriptors = [],
       recordBytes;
 
